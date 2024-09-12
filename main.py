@@ -92,7 +92,7 @@ def main():
                 st.header(main_section)
                 for subsection in subsections:
                     # st.subheader(subsection)
-                    prompt = f"Given the problem statement: '{problem_statement}', provide an analysis for the section '{subsection}' of the Comprehensive Problem Analysis Framework."
+                    prompt = f"Given the problem statement: '{problem_statement}', provide an analysis for the section '{subsection}' of the Comprehensive Problem Analysis Framework. Also provide a Diagnosis Analysis section with Quantitative results"
                     response = generate_response(prompt)
                     st.write(response)
                 st.markdown("---")
